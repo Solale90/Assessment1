@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link href="app.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div id="app">
+            <div id="bg" onclick="bg1()">
+                <button id="prev" onclick="onPrevThumb()">Previous</button>
+                <div class="thumbs" id="thumb1" onclick="onThumbImgClick(1)"></div>
+                <div class="thumbs" id="thumb2" onclick="onThumbImgClick(2)"></div>
+                <div class="thumbs" id="thumb3" onclick="onThumbImgClick(3)"></div>
+                <div class="thumbs" id="thumb4" onclick="onThumbImgClick(4)"></div>
+                <button id="next" onclick="onNextThumb()">Next</button>
+            </div>
+            <div id="preview" onclick="preview1(event)">
+                <div id="stickerControls">
+                    <button type="button" id="open" onclick="onOpen(event)">Sticker</button>
+                    <button type="button" id="change" onclick="change(event)">Change</button>
+                </div>
+                <div id="stickerDisplay">
+                    <img src="imgs/st1.png" id="sticker" />
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+#app {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}
+
+#bg {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: aquamarine
+}
+
+#preview {
+    flex: 50;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-color: antiquewhite;
+    flex-direction: column;
+}
+
+.thumbs {
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    border: 5px;
+}
+
+#thumb1 {
+    background-image: url(imgs/bg1.jpg);
+}
+
+#thumb2 {
+    background-image: url(imgs/bg2.jpg);
+}
+
+#thumb3 {
+    background-image: url(imgs/bg3.jpg);
+}
+
+#thumb4 {
+    background-image: url(imgs/bg4.jpg);
+}
+
+#stickerDisplay {
+    position: absolute;
+    bottom: 30px;
+    right: -100px;
+    width: 100px;
+    height: 100px;
+}
+
+#stickerControls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    flex: 1;
+}
+
+#sticker {
+    width: 100%;
+    height: 100%;
+}
+
+.newStickers {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
